@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            SearchBar(text: .constant(""),
+                      onSearchButtonClicked: nil)
+                .padding()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 100.0)
+            Text("Hello, World!")
+        }
     }
 }
 
